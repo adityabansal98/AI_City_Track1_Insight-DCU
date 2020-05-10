@@ -21,4 +21,6 @@ At an intermediate step it generates all the images of node of entry and exit pa
 Then those images are manually labelled for a MoI.
 After which the remaining code is run.
 
+The labels which were used for generating the outputs are found in the folder "modified_outputs".  cam_1 shows an example of node_pics.
+
 Note that, while labelling certain manipulations on frame of exit where made and hence the exact same result may not be produced.
