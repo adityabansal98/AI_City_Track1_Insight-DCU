@@ -1,0 +1,24 @@
+There are 3 stages of the pipeline that we build-
+1) Detection
+2) Tracking
+3) Counting
+
+There are 3 folders with the same name containing the codes for corresponding stage.
+
+1) Detection-
+The "object_detection.py" file when run on all the videos produces a file for each video containing all the vehicle detections for that video.
+
+2) Tracking-
+The "object_detection_video_tensorflow.py" file when run for all the detection files and corresponding ROIs produces a file for each video containing list of trajectories detected in that video.
+
+3) Counting-
+For counting, the first step is Graph Modelling. We run the "graph_modelling.cpp" for all the detection files and it produces 2 files for each file-
+  a Node File -> contains the details of all the nodes formed for that video
+  a Vehicle File -> contain the details of all the vehicles observed and their entry and exit node.
+  
+Finally we run "Graph Result Reader.py" on node file and video file of each video. 
+At an intermediate step it generates all the images of node of entry and exit pair observed.
+Then those images are manually labelled for a MoI.
+After which the remaining code is run.
+
+Note that, while labelling certain manipulations on frame of exit where made and hence the exact same result may not be produced.
