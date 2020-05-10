@@ -1,0 +1,12 @@
+trainedWidth  =  416
+trainedHeight =  416
+iou_threshold = 0.7
+Threshold_obj_score = 0.4
+main_output_folder_path = '/Volumes/BANSAL/new_tracking_outputs/'
+classes = {'0':'person','1':'bicycle','2':'car','3':'bike','5':'bus','7':'truck'}
+list_of_classes = [2,7]
+src_directory_path = '/Users/adityabansal/Downloads/AIC20_track1/'
+dataset_directory_path = src_directory_path + 'Dataset_A/'
+roi_directory_path = src_directory_path + 'ROIs/'
+text_outputs_directory_path = '/Volumes/BANSAL/new_outputs/'
+detection_input_path = '/Users/adityabansal/Downloads/detection_files/'
